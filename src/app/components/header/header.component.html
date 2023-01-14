@@ -2,22 +2,20 @@
 
     <div class="icon-list">
         <button class="icon" mat-icon-button [routerLinkActive]="['is-active']">
+            <mat-icon routerLink="vendas"> home </mat-icon>
+        </button>
+        <button class="icon" routerLink="produtos" mat-icon-button [routerLinkActive]="['is-active']">
             <mat-icon routerLink="produtos"> storefront </mat-icon>
         </button>
-
-        <button class="icon" mat-icon-button [routerLinkActive]="['is-active']">
+        <button class="icon" routerLink="carrinho" mat-icon-button [routerLinkActive]="['is-active']">
             <mat-icon 
-                routerLink="carrinho"
                 matBadge="8" 
                 matBadgeColor="warn"
             > 
-                local_offer 
+                local_mall
             </mat-icon>
         </button>
 
-        <button class="icon" mat-icon-button [routerLinkActive]="['is-active']">
-            <mat-icon routerLink="vendas"> local_mall </mat-icon>
-        </button>
     </div>
 
 </div>

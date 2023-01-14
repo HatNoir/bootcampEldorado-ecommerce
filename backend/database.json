@@ -1,0 +1,38 @@
+{
+    "itens": [
+        {
+            "codigo": "1",
+            "nome": "Poção de vida",
+            "categoria": "Consumiveis",
+            "atributos": [
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                }
+            ],
+            "preco": 0
+        },
+        {
+            "codigo": "2",
+            "nome": "Poção de vida",
+            "categoria": "Consumiveis",
+            "atributos": [
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                }
+            ],
+            "preco": 0
+        }
+    ]
+}

@@ -8,14 +8,13 @@
                 <p class="card-description_title"> {{ produto.Nome }} </p>
 
                 <ul class="card-description_list">
-                    <li class="item"> {{ produto.SKU }}</li>
-                    <li class="item">{{ produto.Marca }}</li>
-                    <li class="item"> {{ produto.Categoria || ' - ' }} </li>
-                    <li class="item"> {{ produto.Dias || ' - ' }}</li>
+                    <li class="item"> {{ produto.codigo || '123' }}</li>
+                    <li class="item">{{ produto.nome || '123' }}</li>
+                    <li class="item"> {{ produto.categoria || ' - ' }} </li>
                 </ul>
 
                 <span class="card-description_price-wrapper" [ngClass]="{ 'promo' : bitPromocao }">
-                    <p class="price"> {{ ( produto.Preco || 0 ) | currency }} </p>
+                    <p class="price"> {{ ( produto.Preco || 100 ) | currency }} </p>
                     <span class="discount" *ngIf="bitPromocao">
                         OFF
                     </span>
