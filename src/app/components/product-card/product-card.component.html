@@ -1,0 +1,43 @@
+<div class="card-container">
+
+    <div class="card-wrapper">
+
+        <div class="card-header">
+            <img src="https://t4.ftcdn.net/jpg/00/89/55/15/360_F_89551596_LdHAZRwz3i4EM4J0NHNHy2hEUYDfXc0j.jpg" alt="">
+            <div class="card-description">
+                <p class="card-description_title"> {{ produto.Nome }} </p>
+
+                <ul class="card-description_list">
+                    <li class="item"> {{ produto.SKU }}</li>
+                    <li class="item">{{ produto.Marca }}</li>
+                    <li class="item"> {{ produto.Categoria || ' - ' }} </li>
+                    <li class="item"> {{ produto.Dias || ' - ' }}</li>
+                </ul>
+
+                <span class="card-description_price-wrapper" [ngClass]="{ 'promo' : bitPromocao }">
+                    <p class="price"> {{ ( produto.Preco || 0 ) | currency }} </p>
+                    <span class="discount" *ngIf="bitPromocao">
+                        OFF
+                    </span>
+                </span>
+
+                <button class="card-description_btn-add-cart" mat-ripple>
+                    Adicionar item
+                </button>
+            </div>
+        </div>
+
+        <div class="card-body">
+
+            <div class="card-price">
+                
+            </div>
+
+        </div>
+
+
+        
+
+    </div>
+
+</div>

@@ -1,0 +1,23 @@
+<div class="header-container">
+
+    <div class="icon-list">
+        <button class="icon" mat-icon-button [routerLinkActive]="['is-active']">
+            <mat-icon routerLink="produtos"> storefront </mat-icon>
+        </button>
+
+        <button class="icon" mat-icon-button [routerLinkActive]="['is-active']">
+            <mat-icon 
+                routerLink="carrinho"
+                matBadge="8" 
+                matBadgeColor="warn"
+            > 
+                local_offer 
+            </mat-icon>
+        </button>
+
+        <button class="icon" mat-icon-button [routerLinkActive]="['is-active']">
+            <mat-icon routerLink="vendas"> local_mall </mat-icon>
+        </button>
+    </div>
+
+</div>

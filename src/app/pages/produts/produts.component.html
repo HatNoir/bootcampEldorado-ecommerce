@@ -1,0 +1,8 @@
+<div class="products-list">
+    <app-product-card
+        *ngFor="let card of productList; let odd = odd"
+        [bitPromocao]=" odd ? true : false "
+        [produto]="card"
+    >    
+    </app-product-card>
+</div>  
