@@ -9,7 +9,7 @@
         </button>
         <button class="icon" routerLink="carrinho" mat-icon-button [routerLinkActive]="['is-active']">
             <mat-icon 
-                matBadge="8" 
+                [matBadge]="amount()" 
                 matBadgeColor="warn"
             > 
                 local_mall

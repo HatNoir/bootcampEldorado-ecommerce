@@ -5,18 +5,18 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { ComponentsModule } from '../components/components.module';
 import { PagesComponent } from './pages.component';
 import { ProdutsComponent } from './produts/produts.component';
-import { CartComponent } from './cart/cart.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
     PagesComponent,
-    ProdutsComponent,
-    CartComponent
+    ProdutsComponent
   ],
   imports: [
     CommonModule,
     PagesRoutingModule,
     ComponentsModule,
+    MatSnackBarModule
   ]
 })
 export class PagesModule { }

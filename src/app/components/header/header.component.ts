@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-header',
@@ -9,5 +10,13 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class HeaderComponent {
   constructor(
     private route: ActivatedRoute,
+    private CartService: CartService
   ) {}
+
+  ngOnInit(){
+  }
+
+  amount(){
+    return this.CartService.getAmout() || 0
+  }
 }

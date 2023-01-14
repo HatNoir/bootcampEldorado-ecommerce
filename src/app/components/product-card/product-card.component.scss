@@ -66,6 +66,16 @@
                     border-radius: 10px;
                     color: #357C72;
                     font-weight: 600;
+
+                    &:hover{
+                        color: #fff;
+                        background-color: #357C72;
+                        cursor: pointer;
+                    }
+
+                    &:active{
+                        transform: scale(0.95);
+                    }
                 }
             }
 
