@@ -15,7 +15,7 @@ export class CartService {
     private httpClient: HttpClient
   ) { }
 
-  cartData!: Product[]
+  cartData: Product[] = []
   productList = new BehaviorSubject<any>([])
 
 
@@ -28,8 +28,8 @@ export class CartService {
     this.productList.next([...this.cartData])
   }
 
-  getProduct(product: Product){
-    this.cartData.push(product)
+  addToCart(product: any){
+    this.cartData.push(product);
     this.productList.next([...this.cartData])
   }
 
