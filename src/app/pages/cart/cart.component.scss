@@ -4,7 +4,9 @@
     padding: 0px 10px;
     display: flex;
     flex-direction: column;
+    max-width: 600px;
     gap: 5px;
+    margin: auto;
     height: 100%;
 
     &_header{
@@ -35,7 +37,6 @@
 
         .cart-item{
             position: relative;
-            max-width: 600px;
             margin: auto;
             margin-bottom: 10px;
             display: flex;
@@ -110,8 +111,36 @@
     }
 
     .controls{
+        border-top: 1px solid $primary;
         
-        button{
+        .footer{
+
+            .discount-wrapper{
+                padding: 10px;
+                background-color: #00000035;
+                border-radius: 10px;
+
+                .discount-container{
+
+                }
+            }
+
+            .values-container{
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+
+                &_session{
+                    display: flex;
+                    justify-content: space-between;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+            }
+
+        }
+
+        .finish-button{
             width: 100%;
             padding: 15px;
             

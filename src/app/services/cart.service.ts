@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { Total } from '../model/Cart';
 import { Product } from '../model/product';
 
 const API = environment.API
@@ -15,28 +16,22 @@ export class CartService {
     private httpClient: HttpClient
   ) { }
 
-  cartData: Product[] = [
-    {
-      codigo: "9",
-      nome: "Poção de vida",
-      categoria: "Consumiveis",
-      quantidade: 1,
-      atributos: [
-          {
-              desc: ""
-          },
-          {
-              desc: ""
-          },
-          {
-              desc: ""
-          }
-      ],
-      preco: 0
-    }
-  ]
-  productList = new BehaviorSubject<any>([])
+  cartData: Product[] = []
+  productList = new BehaviorSubject<any>(this.cartData)
 
+  totalList: Total = {
+    discount: 0.0,
+    total: 0,
+    subTotal: 0
+  };
+  TotalOberservable= new BehaviorSubject<Total>(this.totalList)
+
+
+  Seila: number = 0
+
+  getProducts(){
+    return this.httpClient.get(`${API}itens`)
+  }
 
   getCart(){
     return this.productList.asObservable()
@@ -67,6 +62,7 @@ export class CartService {
     this.cartData.map( (itemCart: Product, index) => {
       if (product.codigo === itemCart.codigo) this.cartData.splice(index, 1)
     })
+    this.Seila++
     this.productList.next(this.cartData)
   }
 
@@ -75,7 +71,22 @@ export class CartService {
     this.productList.next(this.cartData)
   }
 
-  getProducts(){
-    return this.httpClient.get(`${API}itens`)
+  //Calculos
+
+  getDiscount(cod: string){
+    return this.httpClient.get(`${API}cupons?cod=${cod}`)
+  }
+
+  setDiscount(discount: number){
+    this.totalList = {...this.totalList, discount}
+    this.TotalOberservable.next(this.totalList)
+  }
+
+  getTotal(){
+    this.totalList.subTotal = this.cartData.reduce( (total: number, item: Product) => total + (item.quantidade * item.preco), 0 )
+    this.totalList.total = this.totalList.subTotal * (1 - this.totalList.discount / 100)
+    this.TotalOberservable.next(this.totalList)
+
+    return this.totalList
   }
 }

@@ -1,4 +1,18 @@
 {
+    "cupons": [
+        {
+            "cod": "ELDORADO_30",
+            "discount": 30
+        },
+        {
+            "cod": "ELDORADO_40",
+            "discount": 40
+        },
+        {
+            "cod": "ELDORADO_50",
+            "discount": 50
+        }
+    ],
     "itens": [
         {
             "codigo": "1",
@@ -15,7 +29,7 @@
                     "desc": ""
                 }
             ],
-            "preco": 0
+            "preco": 10
         },
         {
             "codigo": "2",
@@ -32,7 +46,7 @@
                     "desc": ""
                 }
             ],
-            "preco": 0
+            "preco": 20
         },
         {
             "codigo": "3",
@@ -49,7 +63,7 @@
                     "desc": ""
                 }
             ],
-            "preco": 0
+            "preco": 30
         },
         {
             "codigo": "4",

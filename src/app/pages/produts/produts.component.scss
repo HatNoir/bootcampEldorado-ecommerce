@@ -1,13 +1,15 @@
 .products-list{
 
+    max-width: 900px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
     padding: 5px;
-    height: 100%;
     overflow: auto;
+    height: 100%;
 }
 
 

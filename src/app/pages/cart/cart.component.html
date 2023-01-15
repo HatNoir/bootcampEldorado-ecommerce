@@ -40,6 +40,30 @@
     </div>
     
     <div class="controls">
-        <button> Finalizar </button>
+        <div class="footer">
+            <h2> resumo do pedido </h2>
+            <div class="discount-wrapper">
+                <div class="discount-container">
+                    Cupom de desconto: 
+                    <input type="text" #discountCupom alt="213123">
+                    <button (click)="getDiscount()"> Aplicar </button>
+                </div>
+            </div>
+            <div class="values-container">
+                <div class="values-container_session">
+                    <span> Subtotal: </span>
+                    <span> {{ getTotal().subTotal | currency }} </span>
+                </div>
+                <div class="values-container_session">
+                    <span> Desconto: </span>
+                    <span> % {{ getTotal().discount }} </span>
+                </div>
+                <div class="values-container_session">
+                    <span> Total: </span>
+                    <span> {{ getTotal().total | currency  }} </span>
+                </div>
+            </div>
+        </div>
+        <button class="finish-button"> Finalizar </button>
     </div>
 </div>
