@@ -7,7 +7,7 @@ Projeto para desenvolver uma plataforma de E-commerce:
 - Finaliza pedido;
 
 <div>
-  <img src="https://media.tenor.com/images/7e3df088fdf1753883ce518275446472/tenor.gif" height="889px" width="896px">
+  <img src="https://github.com/HatNoir/bootcampEldorado-ecommerce/blob/master/src/assets/eldorado.gif" height="889px" width="896px">
 </div>
 
 ## Front end
