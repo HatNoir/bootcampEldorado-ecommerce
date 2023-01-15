@@ -19,5 +19,5 @@ Execute o comando `json-server --watch database.json` a partir da pasta `backend
 O servidor deve executar como `http://localhost:3000`
 
 Rotas:
-- /copuns
+- /cupons
 - /itens
