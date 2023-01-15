@@ -21,3 +21,6 @@ O servidor deve executar como `http://localhost:3000`
 Rotas:
 - /cupons
 - /itens
+
+Documentação da biblioteca:
+<a href="https://www.npmjs.com/package/json-server"> JSON-SERVER </a>
