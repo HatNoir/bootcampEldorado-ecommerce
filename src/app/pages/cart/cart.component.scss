@@ -116,7 +116,6 @@
             .discount-wrapper{
                 padding: 10px;
                 background-color: #00000035;
-                border-radius: 5px;
                 font-size: 1rem;
 
                 .discount-container{
@@ -133,13 +132,6 @@
                             }
                         }
 
-                        input{
-                            border-radius: 5px 0px 0px 5px;
-                        }
-                        button{
-                            border-radius: 0px 5px 5px 0px;
-                            cursor: pointer;
-                        }
                     }
                 }
             }
@@ -160,8 +152,17 @@
         }
 
         .finish-button{
+            border: none;
             width: 100%;
             padding: 15px;
+            background-color: #000000;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+
+            &:hover{
+                background-color: lighten(#000000, 10%);
+            }
         }
 
     }

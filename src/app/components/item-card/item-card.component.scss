@@ -1,0 +1,80 @@
+@import '../../../variables';
+
+.wrapper{
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.cart-item{
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+
+    &_container{
+        display: flex;
+        gap: 10px;
+
+        &_item-picture{
+
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 5px;
+            }
+
+        }
+
+        &_item-description{
+            .title{
+                font-weight: 500;
+            }
+
+            .price{
+                font-weight: 600;
+                font-size: 16px;
+            }
+        }
+    }
+
+    &_controls{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex: 1;
+
+        .remove-btn{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 5px;
+        }
+
+        .storage{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 10px;
+            text-align: center;
+            border: 1px solid $primary;
+            border-radius: 5px;
+        }
+
+        .values{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 5px;
+            width: 100%;
+
+            input{
+                border-radius: 5px;
+                border: 1px solid darken( $primary, $amount: 20%);
+                max-width: 150px;
+                text-align: center;
+            }
+        }
+    }
+}

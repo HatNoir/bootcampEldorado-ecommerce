@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-item-card',
@@ -7,5 +8,15 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ItemCardComponent {
+
+  constructor(private cartService: CartService){
+    
+  }
+
+  @Input() item: any;
+
+  removeItem(){
+    this.cartService.removeProduct(this.item)
+  }
 
 }
