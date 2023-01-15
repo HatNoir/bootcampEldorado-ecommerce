@@ -42,7 +42,7 @@ export class CartComponent {
       .subscribe(
         (success: any) => {
           if (success.length){
-            this.CarService.setDiscount(success[0].discount)
+            this.CarService.setDiscount(success[0])
           }
         }
       )

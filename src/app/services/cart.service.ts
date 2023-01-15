@@ -20,6 +20,7 @@ export class CartService {
   productList = new BehaviorSubject<any>(this.cartData)
 
   totalList: Total = {
+    cod: '',
     discount: 0.0,
     total: 0,
     subTotal: 0
@@ -77,8 +78,8 @@ export class CartService {
     return this.httpClient.get(`${API}cupons?cod=${cod}`)
   }
 
-  setDiscount(discount: number){
-    this.totalList = {...this.totalList, discount}
+  setDiscount(body: Total){
+    this.totalList = {...this.totalList, ...body}
     this.TotalOberservable.next(this.totalList)
   }
 

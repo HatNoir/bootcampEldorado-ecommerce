@@ -6,7 +6,7 @@
 
     <div class="cart-container_list">
 
-        <div class="cart-item wrapper" *ngFor="let item of cartList">
+        <div class="cart-item wrapper mat-elevation-z1" *ngFor="let item of cartList">
             <div class="cart-item_container">
                 <div class="cart-item_container_item-picture">
                     <img src="https://t4.ftcdn.net/jpg/00/89/55/15/360_F_89551596_LdHAZRwz3i4EM4J0NHNHy2hEUYDfXc0j.jpg" alt="">
@@ -45,8 +45,10 @@
             <div class="discount-wrapper">
                 <div class="discount-container">
                     Cupom de desconto: 
-                    <input type="text" #discountCupom alt="213123">
-                    <button (click)="getDiscount()"> Aplicar </button>
+                    <div class="wrapper">
+                        <input type="text" #discountCupom [value]="getTotal().cod">
+                        <button (click)="getDiscount()"> Aplicar </button>
+                    </div>
                 </div>
             </div>
             <div class="values-container">
@@ -64,6 +66,6 @@
                 </div>
             </div>
         </div>
-        <button class="finish-button"> Finalizar </button>
+        <button mat-flat-button color="primary" class=" finish-button"> Finalizar </button>
     </div>
 </div>
