@@ -1,10 +1,12 @@
 # Desafio Semana 1 - Eldorado Tech Training
 
-Projeto para desenvolver uma plataforma de E-commercer:
+Projeto para desenvolver uma plataforma de E-commerce:
 - Adiciona / remove itens do carrinho;
 - Aplicar cupom de desconto;
 - Calcula em tempo real os produtos adicionados e desconto aplicado;
 - Finaliza pedido;
+
+<img src="https://media.tenor.com/images/7e3df088fdf1753883ce518275446472/tenor.gif">
 
 ## Front end
 
