@@ -14,10 +14,12 @@
         </div>
 
         <div class="card-body">
-            <span class="card-body_price-wrapper" [ngClass]="{ 'promo' : bitPromocao }">
-                <p class="price"> {{ ( produto.preco || 100 ) | currency }} </p>
-                <span class="discount" *ngIf="bitPromocao">
-                    OFF
+            <span class="card-body_price-wrapper" [ngClass]="{ 'promo' : produto.bitDesconto }">
+                <p class="price">
+                    {{ ( produto.preco || 0 ) | currency }}
+                </p>
+                <span class="discount" *ngIf="produto.bitDesconto">
+                    {{ produto.desconto * 100 }}% OFF
                 </span>
             </span>
 

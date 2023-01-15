@@ -1,4 +1,7 @@
 <div class="products-list">
+    <div class="loading-shade" *ngIf="isLoadingResults">
+		<mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+	</div>
     <app-product-card
         *ngFor="let card of productList; let odd = odd"
         [bitPromocao]=" odd ? true : false "

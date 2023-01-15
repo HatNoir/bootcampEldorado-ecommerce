@@ -6,16 +6,19 @@ import { CartService } from 'src/app/services/cart.service';
   styleUrls: ['./produts.component.scss']
 })
 export class ProdutsComponent {
-  productList!: any[]
 
   constructor(
     private productsService: CartService
   ){}
 
+  isLoadingResults: boolean = true;
+  productList!: any[]
+
   ngOnInit(){
     this.productsService
       .getProducts()
       .subscribe( (response: any) => {
+        setTimeout(() => { this.isLoadingResults = false }, 500)
         this.productList = [...response]
       })
   }

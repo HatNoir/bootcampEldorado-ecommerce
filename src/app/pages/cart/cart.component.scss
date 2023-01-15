@@ -115,21 +115,29 @@
 
             .discount-wrapper{
                 padding: 10px;
-                background-color: #00000035;
+                background-color: #ed354b0d;
                 font-size: 1rem;
 
                 .discount-container{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    font-weight: 700;
 
                     .wrapper{
                         *{
                             padding: 10px;
-                            border: none;                            
+                            border: none;       
+                            border: 1px solid #ed354b;
+                     
                             &:focus{
                                 outline: none;
                             }
+                        }
+
+                        button{
+                            background-color: #ed354b;
+                            color: #fff;
                         }
 
                     }
@@ -160,7 +168,12 @@
             font-size: 1rem;
             cursor: pointer;
 
-            &:hover{
+            &:disabled{
+                cursor: not-allowed;
+                background-color: lighten(#000000, 50%);
+            }
+
+            &:hover:not(:disabled){
                 background-color: lighten(#000000, 10%);
             }
         }

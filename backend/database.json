@@ -23,6 +23,8 @@
             "imagens":[
                 "https://img.ltwebstatic.com/images3_pi/2023/01/13/1673578452daa35562de994cc1af51e5c8b483ea48_thumbnail_600x.webp"
             ],
+            "desconto": 0.3,
+            "bitDesconto": false,
             "preco": 59.90
         },
         {
@@ -34,83 +36,99 @@
             "imagens":[
                 "https://img.ltwebstatic.com/images3_pi/2022/11/29/1669702709f47044692faf108d827ecce6adc783dd_thumbnail_600x.webp"
             ],
+            "desconto": 0.3,
+            "bitDesconto": true,
             "preco": 40.00
         },
         {
             "codigo": "3",
-            "nome": "Poção de vida",
-            "categoria": "Consumiveis",
+            "nome": "Bolsa HIYA com chaveiro",
+            "categoria": "Acessórios",
             "atributos": [
             ],
             "imagens":[
                 "https://img.ltwebstatic.com/images3_pi/2022/04/13/164982001924a0fdc2483fe6bed01d5394ba0a9b05_thumbnail_600x.webp"
             ],
+            "desconto": 0.3,
+            "bitDesconto": false,
             "preco": 100.00
         },
         {
             "codigo": "4",
-            "nome": "Poção de vida",
+            "nome": "Camisa JDM Tokyo",
             "categoria": "Consumiveis",
             "atributos": [
             ],
             "imagens":[
                 "https://img.ltwebstatic.com/images3_pi/2021/09/23/163237448351377b01260196d20ddb2691711260fa_thumbnail_600x.webp"
             ],
+            "desconto": 0.3,
+            "bitDesconto": false,
             "preco": 59.90
         },
         {
             "codigo": "5",
-            "nome": "Poção de vida",
-            "categoria": "Consumiveis",
+            "nome": "Camisa branco Tokyo",
+            "categoria": "Camisas",
             "atributos": [
             ],
             "imagens":[
                 "https://img.ltwebstatic.com/images3_pi/2022/09/19/1663554131cdc3e7996cb6ecd821a11f0f31f5e2c7_thumbnail_600x.webp"
             ],
+            "desconto": 0.3,
+            "bitDesconto": false,
             "preco": 80.00
         },
         {
             "codigo": "6",
-            "nome": "Poção de vida",
-            "categoria": "Consumiveis",
+            "nome": "Calça Cargo Preta",
+            "categoria": "Calças",
             "atributos": [
             ],
             "imagens":[
                 "https://img.ltwebstatic.com/images3_pi/2022/04/11/1649647346747ca473020378577726e472ea625da5_thumbnail_600x.webp"
             ],
+            "desconto": 0.3,
+            "bitDesconto": true,
             "preco": 120.00
         },
         {
             "codigo": "7",
-            "nome": "Poção de vida",
-            "categoria": "Consumiveis",
+            "nome": "Calça Preta",
+            "categoria": "Calças",
             "atributos": [
             ],
             "imagens":[
                 "https://img.ltwebstatic.com/gspCenter/goodsImage/2022/8/24/1478594162_1020422/310102A2C1B184DA7E5E6D4B05707E7B_thumbnail_600x.jpg"
             ],
+            "desconto": 0.3,
+            "bitDesconto": false,
             "preco": 149.90
         },
         {
             "codigo": "8",
-            "nome": "Poção de vida",
-            "categoria": "Consumiveis",
+            "nome": "Short com cordão",
+            "categoria": "Shorts",
             "atributos": [
             ],
             "imagens":[
                 "https://img.ltwebstatic.com/images3_pi/2022/06/20/1655689657c15c1fc811b05286c69fe86650965aa2_thumbnail_600x.webp"
             ],
+            "desconto": 0.3,
+            "bitDesconto": false,
             "preco": 95.90
         },
         {
             "codigo": "9",
-            "nome": "Poção de vida",
+            "nome": "Calça Cinza",
             "categoria": "Consumiveis",
             "atributos": [
             ],
             "imagens":[
                 "https://img.ltwebstatic.com/images3_pi/2022/10/28/16669550954bb0689cb9e4752dc0d26303fa46cd5f_thumbnail_600x.webp"
             ],
+            "desconto": 0.3,
+            "bitDesconto": true,
             "preco": 119.90
         }
     ]

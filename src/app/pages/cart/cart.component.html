@@ -12,6 +12,10 @@
         > 
         </app-item-card>
 
+        <div class="empty-cart" *ngIf="!cartList.length">
+            Opa! Você ainda não adicionou nenhum item
+        </div>
+
     </div>
     
     <div class="controls">
@@ -42,6 +46,12 @@
                 </div>
             </div>
         </div>
-        <button matRipple matRippleColor="#2b2b2b" class="finish-button"> Finalizar </button>
+        <button 
+            (click)="clearCart()"
+            matRipple 
+            matRippleColor="#2b2b2b" 
+            class="finish-button"
+            [disabled]="!cartList.length"
+        > Finalizar </button>
     </div>
 </div>

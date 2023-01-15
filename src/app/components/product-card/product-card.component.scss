@@ -40,8 +40,6 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                
-                // border-radius: 10px;
                 padding: 6px;
 
                 .price{
@@ -55,9 +53,9 @@
                 }
 
                 &.promo{
-                    background-color: #f0ebec;
+                    background-color: #ed354b0d;
                     color: #ed354b;
-
+                    
                     .discount{
                         background-color: #ed354b;
                         color: #fff;
