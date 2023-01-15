@@ -17,3 +17,7 @@ Execute `npm i -g json-server` para instalar a biblioteca JSON-SERVER
 Execute o comando `json-server --watch database.json` a partir da pasta `backend` inclusa na pasta raiz do projeto.
 
 O servidor deve executar como `http://localhost:3000`
+
+Rotas:
+- /copuns
+- /itens
