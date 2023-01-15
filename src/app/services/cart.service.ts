@@ -28,8 +28,15 @@ export class CartService {
     this.productList.next([...this.cartData])
   }
 
-  addToCart(product: any){
-    this.cartData.push(product);
+  addToCart(product: Product){
+    const prod = this.cartData.find((item: Product) => product.codigo === item.codigo)
+
+    if (!prod){
+      this.cartData.push({...product, quantidade: 1})
+    } else {
+      prod.quantidade++
+    }
+    
     this.productList.next([...this.cartData])
   }
 
