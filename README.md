@@ -1,4 +1,4 @@
-# Desafio Seman 1 - Eldorado Tech Training
+# Desafio Semana 1 - Eldorado Tech Training
 
 Projeto para desenvolver uma plataforma de E-commercer:
 - Adiciona / remove itens do carrinho;
