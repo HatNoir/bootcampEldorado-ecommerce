@@ -31,11 +31,6 @@ export class CartComponent {
       })
   }
 
-  removeItem(product: Product){
-    this.CarService.removeProduct(product)
-    this.matSnackBar.open(`${product.nome} foi removido da lista`, 'Fechar',  {duration: 1500, verticalPosition: 'top'})
-  }
-
   getDiscount(){
     this.CarService
       .getDiscount(this.discountCupom.nativeElement.value)

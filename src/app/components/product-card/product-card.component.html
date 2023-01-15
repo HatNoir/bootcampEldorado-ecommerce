@@ -1,39 +1,29 @@
-<div class="card-container">
+<div class="card-container mat-elevation-z1">
 
     <div class="card-wrapper">
 
         <div class="card-header">
-            <img src="https://t4.ftcdn.net/jpg/00/89/55/15/360_F_89551596_LdHAZRwz3i4EM4J0NHNHy2hEUYDfXc0j.jpg" alt="">
+            <img [src]="produto.imagens[0]" alt="">
             <div class="card-description">
                 <p class="card-description_title"> {{ produto.nome }} </p>
 
                 <ul class="card-description_list">
-                    <li class="item">#{{ produto.codigo || '123' }}</li>
                     <li class="item"> {{ produto.categoria || ' - ' }} </li>
-                    <ul class="item"> 
-                        <li class="item" *ngFor="let atributo of produto.atributos"> {{ atributo.desc }} </li>
-                    </ul>
                 </ul>
-
-                <span class="card-description_price-wrapper" [ngClass]="{ 'promo' : bitPromocao }">
-                    <p class="price"> {{ ( produto.preco || 100 ) | currency }} </p>
-                    <span class="discount" *ngIf="bitPromocao">
-                        OFF
-                    </span>
-                </span>
-
-                <button class="card-description_btn-add-cart" (click)="addItem(produto)" mat-ripple>
-                    Adicionar item
-                </button>
             </div>
         </div>
 
         <div class="card-body">
+            <span class="card-body_price-wrapper" [ngClass]="{ 'promo' : bitPromocao }">
+                <p class="price"> {{ ( produto.preco || 100 ) | currency }} </p>
+                <span class="discount" *ngIf="bitPromocao">
+                    OFF
+                </span>
+            </span>
 
-            <div class="card-price">
-                
-            </div>
-
+            <button class="card-body_btn-add-cart" (click)="addItem(produto)" mat-ripple>
+                Adicionar item
+            </button>
         </div>
 
 

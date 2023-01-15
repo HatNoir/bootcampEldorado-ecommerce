@@ -1,14 +1,17 @@
+@import '../../../variables';
+
 .card-container{
     width: 200px;
-    height: auto;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.178);
+    height: 100%;
+    padding: 10px;
+    display: flex;
 
     .card-wrapper{
         display: flex;
-        height: auto;
+        height: 100%;
         flex-direction: column;
-        padding: 10px;
-
+        flex: 1;
+        
         .card-header{
 
             .card-description{
@@ -25,67 +28,70 @@
                         color: #484848;
                     }
                 }
-    
-                &_price-wrapper{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
+            }
 
-                    border-radius: 10px;
-                    padding: 6px;
+        }
 
-                    .price{
-                        margin: 0px;
-                        padding: 5px 0px;
-                    }
-    
-                    .discount{
-                        border-radius: 5px;
-                        padding: 5px 10px;
-                    }
+        .card-body{
+            margin-top: auto;
+            font-weight: 700;
 
-                    &.promo{
-                        background-color: #F2D8CE;
-                        color: #802503;
+            &_price-wrapper{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                // border-radius: 10px;
+                padding: 6px;
 
-                        .discount{
-                            background-color: #802503;
-                            color: #fff;
-                        }
-
-                    }
+                .price{
+                    margin: 0px;
+                    padding: 5px 0px;
                 }
 
-                &_btn-add-cart{
-                    width: 100%;
-                    padding: 12px;
-                    margin-top: 10px;
+                .discount{
+                    // border-radius: 5px;
+                    padding: 5px 10px;
+                }
 
-                    background-color: #fff;
-                    border: 1px solid #357C72;
-                    border-radius: 10px;
-                    color: #357C72;
-                    font-weight: 600;
+                &.promo{
+                    background-color: #f0ebec;
+                    color: #ed354b;
 
-                    &:hover{
+                    .discount{
+                        background-color: #ed354b;
                         color: #fff;
-                        background-color: #357C72;
-                        cursor: pointer;
                     }
 
-                    &:active{
-                        transform: scale(0.95);
-                    }
                 }
             }
 
+            &_btn-add-cart{
+                background-color: darken($primary , 100%);
+                color: #fff;
+                border: none;
+                width: 100%;
+                padding: 12px;
+                margin-top: 10px;
+                font-weight: 600;
+
+                &:hover{
+                    background-color: darken($primary , 50%);
+                    cursor: pointer;
+                }
+
+                &:active{
+                    transform: scale(0.95);
+                }
+            }
         }
 
         img{
             width: 100%;
             height: 100%;
             max-height: 200px;
-            max-width: 200px;
+            max-width: 250px;
+            object-fit: cover;
         }
 
         .card-description{

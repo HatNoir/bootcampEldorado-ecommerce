@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { CartService } from 'src/app/services/cart.service';
 
 @Component({
@@ -9,7 +10,10 @@ import { CartService } from 'src/app/services/cart.service';
 })
 export class ItemCardComponent {
 
-  constructor(private cartService: CartService){
+  constructor(
+    private cartService: CartService,
+    private matSnackBar: MatSnackBar
+  ){
     
   }
 
@@ -17,6 +21,8 @@ export class ItemCardComponent {
 
   removeItem(){
     this.cartService.removeProduct(this.item)
+    this.matSnackBar.open(`${this.item.nome} foi removido do carrinho`, '',  {duration: 1500, verticalPosition: 'top'})
+
   }
 
 }

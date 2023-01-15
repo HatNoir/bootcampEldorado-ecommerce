@@ -1,8 +1,9 @@
 <div class="cart-item wrapper mat-elevation-z1">
     <div class="cart-item_container">
-        <div class="cart-item_container_item-picture">
-            <img src="https://t4.ftcdn.net/jpg/00/89/55/15/360_F_89551596_LdHAZRwz3i4EM4J0NHNHy2hEUYDfXc0j.jpg" alt="">
-        </div>
+        <img class="cart-item_container_item-picture" [src]="item.imagens[0]" alt="">
+        <!-- <div class="cart-item_container_item-picture">
+            <img [src]="item.imagens[0]" alt="">
+        </div> -->
     </div>
 
     <div class="cart-item_controls">

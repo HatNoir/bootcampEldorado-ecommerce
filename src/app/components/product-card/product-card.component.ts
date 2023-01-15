@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Product } from 'src/app/model/product';
 import { CartService } from 'src/app/services/cart.service';
 
@@ -11,7 +12,8 @@ import { CartService } from 'src/app/services/cart.service';
 export class ProductCardComponent {
 
   constructor(
-    public CartService: CartService
+    public CartService: CartService,
+    private matSnackBar: MatSnackBar
   ){
 
   }
@@ -21,6 +23,9 @@ export class ProductCardComponent {
   
   addItem(product: Product){
     this.CartService.addToCart(product)
+
+    this.matSnackBar.open(`${product.nome} foi adicionado ao seu carrinho`, '', { duration: 1500, verticalPosition: 'top' })
+
   }
 
 }

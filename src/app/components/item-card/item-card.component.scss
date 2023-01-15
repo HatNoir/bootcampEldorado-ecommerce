@@ -11,19 +11,16 @@
     margin: auto;
     margin-bottom: 10px;
     display: flex;
+    gap: 5px;
 
     &_container{
         display: flex;
         gap: 10px;
 
         &_item-picture{
-
-            img{
-                width: 100px;
-                height: 100px;
-                border-radius: 5px;
-            }
-
+            width: 100px;
+            height: 120px;
+            object-fit: cover;
         }
 
         &_item-description{
@@ -70,7 +67,6 @@
             width: 100%;
 
             input{
-                border-radius: 5px;
                 border: 1px solid darken( $primary, $amount: 20%);
                 max-width: 150px;
                 text-align: center;

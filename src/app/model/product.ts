@@ -5,6 +5,7 @@ export interface Product {
     quantidade: number,
     categoria: string,
     atributos: Atributes[]
+    imagens: string[]
 }
 
 
