@@ -11,8 +11,9 @@ export class CartComponent {
   
   constructor(
     private CarService: CartService,
+    private matSnackBar: MatSnackBar
   ){
-
+    
   }
 
   cartList: Product[] = []
@@ -22,6 +23,11 @@ export class CartComponent {
       .subscribe( response => {
         this.cartList = response
       })
+  }
+
+  removeItem(product: Product){
+    this.CarService.removeProduct(product)
+    this.matSnackBar.open(`${product.nome} foi removido da lista`, 'Fechar',  {duration: 1500, verticalPosition: 'top'})
   }
 
   ngOnDestroy(){

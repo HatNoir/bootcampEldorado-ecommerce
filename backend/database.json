@@ -33,6 +33,125 @@
                 }
             ],
             "preco": 0
+        },
+        {
+            "codigo": "3",
+            "nome": "Poção de vida",
+            "categoria": "Consumiveis",
+            "atributos": [
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                }
+            ],
+            "preco": 0
+        },
+        {
+            "codigo": "4",
+            "nome": "Poção de vida",
+            "categoria": "Consumiveis",
+            "atributos": [
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                }
+            ],
+            "preco": 0
+        },
+        {
+            "codigo": "5",
+            "nome": "Poção de vida",
+            "categoria": "Consumiveis",
+            "atributos": [
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                }
+            ],
+            "preco": 0
+        },
+        {
+            "codigo": "6",
+            "nome": "Poção de vida",
+            "categoria": "Consumiveis",
+            "atributos": [
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                }
+            ],
+            "preco": 0
+        },
+        {
+            "codigo": "7",
+            "nome": "Poção de vida",
+            "categoria": "Consumiveis",
+            "atributos": [
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                }
+            ],
+            "preco": 0
+        },
+        {
+            "codigo": "8",
+            "nome": "Poção de vida",
+            "categoria": "Consumiveis",
+            "atributos": [
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                }
+            ],
+            "preco": 0
+        },
+        {
+            "codigo": "9",
+            "nome": "Poção de vida",
+            "categoria": "Consumiveis",
+            "atributos": [
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                },
+                {
+                    "desc": ""
+                }
+            ],
+            "preco": 0
         }
     ]
 }

@@ -1,3 +1,45 @@
-<div *ngFor="let item of cartList">
- pidoca
+<div class="cart-container">
+    <div class="cart-container_header">
+        <h2 class="title"> CARRINHO </h2>
+        <!-- <span> {{ Cart.countItens }} </span> -->
+    </div>
+
+    <div class="cart-container_list">
+
+        <div class="cart-item wrapper" *ngFor="let item of cartList">
+            <div class="cart-item_container">
+                <div class="cart-item_container_item-picture">
+                    <img src="https://t4.ftcdn.net/jpg/00/89/55/15/360_F_89551596_LdHAZRwz3i4EM4J0NHNHy2hEUYDfXc0j.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="cart-item_controls">
+
+                <div class="cart-item_container_item-description">
+                    <p class="title" max> {{ item.nome }} </p>
+                    <p class="price"> {{ (item.preco * item.quantidade) | currency }} </p>
+                </div>
+
+                <button mat-icon-button class="remove-btn" (click)="removeItem(item)">
+                    <mat-icon> delete </mat-icon>
+                </button>
+
+                <div class="values">
+                    <button  mat-icon-button (click)="item.quantidade = item.quantidade-1" [disabled]="item.quantidade == 1"> 
+                        <mat-icon> remove </mat-icon>
+                    </button>
+                    <input type="text" inputmode="numeric" [value]="item.quantidade">
+                    <button  mat-icon-button (click)="item.quantidade = item.quantidade+1"> 
+                        <mat-icon> add </mat-icon>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="controls">
+        <button> Finalizar </button>
+    </div>
 </div>

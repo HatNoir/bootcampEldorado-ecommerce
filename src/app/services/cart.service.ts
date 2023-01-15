@@ -15,7 +15,26 @@ export class CartService {
     private httpClient: HttpClient
   ) { }
 
-  cartData: Product[] = []
+  cartData: Product[] = [
+    {
+      codigo: "9",
+      nome: "Poção de vida",
+      categoria: "Consumiveis",
+      quantidade: 1,
+      atributos: [
+          {
+              desc: ""
+          },
+          {
+              desc: ""
+          },
+          {
+              desc: ""
+          }
+      ],
+      preco: 0
+    }
+  ]
   productList = new BehaviorSubject<any>([])
 
 
@@ -48,7 +67,6 @@ export class CartService {
     this.cartData.map( (itemCart: Product, index) => {
       if (product.codigo === itemCart.codigo) this.cartData.splice(index, 1)
     })
-
     this.productList.next(this.cartData)
   }
 
