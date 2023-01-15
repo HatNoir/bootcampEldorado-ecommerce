@@ -6,7 +6,9 @@ Projeto para desenvolver uma plataforma de E-commerce:
 - Calcula em tempo real os produtos adicionados e desconto aplicado;
 - Finaliza pedido;
 
+<div>
 <img src="https://media.tenor.com/images/7e3df088fdf1753883ce518275446472/tenor.gif" height="800px">
+</div>
 
 ## Front end
 
