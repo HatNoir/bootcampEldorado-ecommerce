@@ -1,9 +1,19 @@
 # Desafio Seman 1 - Eldorado Tech Training
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
+Projeto para desenvolver uma plataforma de E-commercer:
+- Adiciona / remove itens do carrinho;
+- Aplicar cupom de desconto;
+- Calcula em tempo real os produtos adicionados e desconto aplicado;
+- Finaliza pedido;
 
 ## Front end
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Execute `ng serve -o` para executar o font end da aplicação. Automaticament abrirá em seu navegador padrão.
 
 ## Backend
+
+Execute `npm i -g json-server` para instalar a biblioteca JSON-SERVER 
+
+Execute o comando `json-server --watch database.json` a partir da pasta `backend` inclusa na pasta raiz do projeto.
+
+O servidor deve executar como `http://localhost:3000`
